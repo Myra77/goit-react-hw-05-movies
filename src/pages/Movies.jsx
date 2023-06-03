@@ -1,4 +1,4 @@
-import SearchMovie from '../components/SearchBar/SearchMovie';
+import SearchMovie from '../components/SearchMovie/SearchMovie';
 
 const Movies = () => {
     return (

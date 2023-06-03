@@ -4,7 +4,7 @@ export const List = styled.ul`
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 12px;
 `;
 
 export const ListItem = styled.li`
@@ -15,10 +15,6 @@ export const ListItem = styled.li`
     height: 330px;
     transition: border-color 0.3s, box-shadow 0.3s;
 
-    &:hover {
-        border-color: #aaa;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    }
 `;
 
 export const Image = styled.img`

@@ -2,7 +2,6 @@ import { useEffect, useState, Suspense } from 'react';
 import { useParams, Outlet, Link } from 'react-router-dom';
 import { fetchMovieDetails } from '../../services/FetchData';
 import { getImage } from '../../services/GetImage';
-import css from './MovieDetailsCard.module.css';
 
 
 const MovieDetailsCard = () => {
@@ -20,7 +19,7 @@ const MovieDetailsCard = () => {
 
     return (
         <>
-            <div className={css['ContainerCard']}>
+            <div>
                 <div>
                     <img 
                         src={getImage(poster_path)} 
