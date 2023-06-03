@@ -23,28 +23,3 @@ export const Image = styled.img`
     height: 300px;
     object-fit: cover;
 `;
-
-export const Title = styled.p`
-    height: 20px;
-    margin: 0;
-    padding: 5px 10px;
-    font-size: 12px;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #2a2a2a;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-`;
-
-export const Rate = styled.p`
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0;
-    padding: 5px;
-    font-size: 12px;
-    font-weight: 500;
-    background-color: #F0E68C;
-    color: #000;
-    border-bottom-left-radius: 5px;
-`;

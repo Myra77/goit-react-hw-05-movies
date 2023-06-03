@@ -3,7 +3,7 @@ import { useLocation, useSearchParams, Link } from 'react-router-dom';
 import { fetchMoviesByQuery } from '../../services/FetchData';
 import { getImage } from '../../services/GetImage';
 import { Input, Button } from './SearchMovie.styled';
-import { List, ListItem, Image, Title, Rate } from '../TopMoviesList/TopMoviesList.styled';
+import { List, ListItem, Image } from '../TopMoviesList/TopMoviesList.styled';
 
 const SearchMovie = () => {
     const [movies, setMovies] = useState([]);
@@ -58,8 +58,8 @@ const SearchMovie = () => {
                     <ListItem key={id}>
                         <Link to={`${id}`} state={{ from: location }}>
                             <Image src={getImage(poster_path)} alt="poster"/>
-                            <Title>{title}</Title>
-                            <Rate>{vote_average}</Rate>
+                            {title}
+                            {vote_average}
                         </Link>
                     </ListItem>
                 ))}
