@@ -47,6 +47,7 @@ const SearchMovie = () => {
                         value={inputValue}
                         onChange={handleChange}
                         placeholder="Find your movie"
+                        autoComplete="off"
                         autoFocus
                     />
                     <Button type="submit">Search</Button>

@@ -2,6 +2,7 @@ import { useEffect, useState, Suspense } from 'react';
 import { useParams, Outlet, Link } from 'react-router-dom';
 import { fetchMovieDetails } from '../../services/FetchData';
 import { getImage } from '../../services/GetImage';
+import { List, ListItem } from './MovieDetailsCard.styled';
 
 
 const MovieDetailsCard = () => {
@@ -38,8 +39,14 @@ const MovieDetailsCard = () => {
             </div>
             <div>
                 <p>Additional information</p>
-                    <Link to="cast">Cast</Link>
-                    <Link to="reviews">Reviews</Link>
+                <List>
+                    <ListItem>
+                        <Link to="cast">Cast</Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link to="reviews">Reviews</Link>
+                    </ListItem>
+                </List> 
             </div>
             <Suspense fallback={<div>Loading...</div>}>
                 <Outlet />

@@ -1,11 +1,11 @@
-// const NotFound = () => {
-//     return (
-//         <>
-//             <main>
-//                 <h1>Not Found</h1>
-//             </main>
-//         </>
-//     );
-// };
+const NotFound = () => {
+    return (
+        <>
+            <main>
+                <h1>Not Found</h1>
+            </main>
+        </>
+    );
+};
   
-// export default NotFound;
+export default NotFound;
