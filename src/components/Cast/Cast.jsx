@@ -14,12 +14,12 @@ const Cast = () => {
     return (
         <>
             <ul>
-                {cast.map(({ name, id, profile_path, character }) => (
+                {cast.map(({ id, name, profile_path, character }) => (
                     <li key={id}>
-                        <img alt={name} width={80}>
-                            src={getImage(profile_path)} 
+                        <img 
+                            src={getImage(profile_path)} alt={name} width={80}>
                         </img>
-                        <h3>{name}</h3>
+                        <h2>{name}</h2>
                         <p>{character}</p>
                     </li>
                 ))}

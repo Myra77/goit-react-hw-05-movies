@@ -19,17 +19,17 @@ const Reviews = () => {
 
     return (
         <>
-        <ul>
             {!reviews && <p>Sorry, there are no reviews yet</p>}
-                {reviews?.length > 0 ?
-                        reviews.map(({ author, content, id }) => (
+            {reviews && (
+                <ul>
+                    {reviews.map(({ author, content, id }) => (
                             <li key={id}>
-                                <h2> {author ? `Author:${author}` : 'No information available'}</h2>
-                                <p>{content}</p> 
-                            </li>        
-                        ))
-                        : 'No information available'}
-            </ul>
+                                <h4>Author: {author}</h4>
+                                <p>{content}</p>
+                            </li>          
+                    ))}
+                </ul>
+            )}
         </>
     );
 };
