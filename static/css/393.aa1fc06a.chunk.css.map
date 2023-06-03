@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/393.aa1fc06a.chunk.css","mappings":"AAAA,gDACI,YAAa,CACb,gBACJ","sources":["components/MovieDetailsCard/MovieDetailsCard.module.css"],"sourcesContent":[".ContainerCardMovieInfo {\n    display: flex;\n    margin-left: 30px;\n}"],"names":[],"sourceRoot":""}
