@@ -20,11 +20,9 @@ const TopMoviesList = () => {
                         <Link to={`movies/${id}`} state={{ from: location }}>
                             <>
                             src={getImage(poster_path)} alt="poster"
-                            </> 
-                            <>
+                            
                             {title}
-                            </>
-                            <>
+                            
                             {vote_average}
                             </>
                             

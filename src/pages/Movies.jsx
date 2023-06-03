@@ -1,6 +1,6 @@
-import SearchMovie from '../components/SearchMovie/SearchMovie';
+import SearchMovie from '../components/SearchBar/SearchMovie';
 
-const MoviesPage = () => {
+const Movies = () => {
     return (
         <>
             <main>
@@ -10,4 +10,4 @@ const MoviesPage = () => {
     );
 };
 
-export default MoviesPage;
+export default Movies;
