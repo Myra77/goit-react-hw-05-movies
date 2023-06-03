@@ -1,16 +1,18 @@
 import { useRef } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 
-import css from './BackLink.module.css';
+import { Button } from './BackLink.styled'; 
 
 const BackLink = () => {
     const location = useLocation();
     const backLinkLocationRef = useRef(location.state?.from ?? '/movies');
 
     return (
-        <button className={css['BtnBack']}>
+        <Button>
             <Link to={backLinkLocationRef.current}>Go back</Link>
-        </button>
+        </Button>
+            
+        
     );
 };
 
